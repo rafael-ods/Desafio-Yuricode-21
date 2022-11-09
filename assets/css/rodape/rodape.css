@@ -1,0 +1,87 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.rodape__logo {
+    background: url("../../img/logo-xbox.svg") center / cover no-repeat;
+    display: inline-block;
+    width: 144px;
+    height: 44px;
+}
+
+.rodape__conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 56px;
+}
+
+.rodape__copy,
+.rodape__direitos {
+    color: var(--cor-cinza);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.rodape__link {
+    color: var(--cor-verde);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .rodape {
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .rodape {
+        justify-content: space-around;
+    }
+
+    .rodape__conteudo {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .rodape__logo {
+        width: 83px;
+        height: 25px;
+        align-self: flex-end;
+    }
+
+    .rodape__copy,
+    .rodape__direitos {
+        font-size: 16px;
+    }
+
+    .rodape__link {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+   .rodape {
+    flex-direction: column;
+   }
+   .rodape__logo {
+    align-self: center;
+    margin-bottom: 15px;
+   }
+   .rodape__conteudo {
+    align-items: center;
+   }
+}  

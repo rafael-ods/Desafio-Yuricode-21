@@ -1,0 +1,27 @@
+@import url(../css/cabecalho/cabecalho.css);
+@import url(../css/banner.css/banner.css);
+@import url(../css/desempenho/desempenho.css);
+@import url(../css/painel/painel.css);
+@import url(../css/pergunta/pergunta.css);
+@import url(../css/rodape/rodape.css);
+:root {
+    --cor-branco:#FFFFFF;
+    --cor-verde: #9BF00B;
+    --cor-cinza: #777777;
+    --cor-cinza-claro: #C0C0C0;
+    --bg-fundo:#0C0C0C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+
+body {
+    background-color: var(--bg-fundo);
+    font-family: var(--fonte-principal);
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1260px;
+    padding: 0 2rem;
+}

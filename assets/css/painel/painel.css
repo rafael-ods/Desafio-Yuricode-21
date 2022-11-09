@@ -1,0 +1,15 @@
+.painel {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.painel__img {
+    width: 100%;
+}
+
+
+@media screen and (max-width:500px) {
+    .painel {
+        grid-template-columns: 1fr;
+    }
+}
